@@ -1,0 +1,141 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definição de fontes */
+@font-face {
+    font-family: "Unbounded";
+    src: url(../fonts/Unbounded-Bold.ttf) format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Estilo Desktop */
+body {
+    background-color: #FFFFFF;
+}
+
+.topHeader {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 70px auto 0;
+}
+
+header #logo {
+    height: 34px;
+    width: 210px;
+}
+
+.btnTema {
+    background: none;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+}
+
+h1, p, a {
+    color: #232323;
+}
+
+h1 {
+    font-size: 64px;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 24px;
+    font-family: "Unbounded", Arial, sans-serif;
+}
+
+h1 span {
+    color: #9747FF;
+}
+
+p {
+    font-size: 24px;
+    text-align: center;
+    width: 792px;
+    margin: 0 auto;
+    font-family: "Poppins", Arial, sans-serif;
+}
+
+a {
+    font-size: 24px;
+    text-decoration: none;
+    text-align: center;
+    background-color: #9747FF;
+    border-radius: 36px;
+    font-family: "Poppins", Arial, sans-serif;
+    font-weight: 600;
+    display: block;
+    width: 340px;
+    height: 66px;
+    line-height: 66px;
+    margin: 40px auto;
+    color: #FFFFFF;
+}
+
+a:hover {
+    background-color: #8233E8;
+}
+
+section img {
+    display: block;
+    width: 762px;
+    height: 446px;
+    margin: 0 auto;
+}
+
+/* Estilo Tablet */
+
+@media(max-width: 769px) {
+
+    .topHeader {
+        margin: 60px auto 0;
+    }
+
+    p {
+        width: 648px;
+    }
+}
+
+/* Estilo mobile */
+
+@media(max-width: 376px) {
+
+    .topHeader {
+        width: 90%;
+        margin: 32px auto 0;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 20px;
+        max-width: 340px;
+    }
+
+    a {
+        font-size: 20px;
+        width: 251px;
+    }
+
+    section img {
+        width: 340px;
+        height: 230px;
+    }
+}

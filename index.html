@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon-tecboard-preto.svg" type="image/svg+xml" id="favicon">
+    <title>Tecboard</title>
+    <link rel="stylesheet" href="css/estilo-escuro.css" id="cssTema">
+</head>
+
+<body>
+    <header>
+
+        <div class="topHeader">
+
+            <img src="img/tecboard-logo-branco.png" alt="Logo tecboard" id="logo">
+
+            <button onclick="alterarTema()" class="btnTema"><img src="img/icone-claro.png" alt="Botão para alternar tema do site" id="imgTema"></button>
+
+        </div>
+
+        <!-- ---- SCRIPT PARA TROCA DE TEMAS ---- -->
+        <script>
+
+            function alterarTema()
+            {
+                const linkTema = document.getElementById("cssTema")
+                const imgBtnTema = document.getElementById("imgTema")
+                const imgLogo = document.getElementById("logo")
+                const imgFavicon = document.getElementById("favicon")
+
+                if (linkTema.getAttribute("href") === "css/estilo-escuro.css") 
+                {
+                    linkTema.href = "css/estilo-claro.css";
+                    imgBtnTema.src = "img/icone-escuro.png";
+                    imgLogo.src = "img/tecboard-logo-preto.png"
+                    imgFavicon.href = "favicon-tecboard-branco.svg?v=" + Date.now();
+                }
+                else
+                {
+                    linkTema.href = "css/estilo-escuro.css"
+                    imgBtnTema.src = "img/icone-claro.png"
+                    imgLogo.src = "img/tecboard-logo-branco.png"
+                    imgFavicon.href = "favicon-tecboard-preto.svg?v=" + Date.now();
+                }
+            }
+
+        </script>
+
+    </header>
+
+    <main>
+        <section>
+            <h1>
+                <span>Fique de olho</span>
+                <br>no que importa
+            </h1>
+
+            <p>Monitoramento em tempo real com alertas inteligentes para sua aplicação nunca sair do ar sem você saber.</p>
+
+            <a href="#">Testar versão demo</a>
+
+            <img src="img/celulares-sobrepostos-desktop.png" alt="Dois celulares pretos sobrepostos com uma sombra roxa ao fundo">
+        </section>
+    </main>
+</body>
+</html>
